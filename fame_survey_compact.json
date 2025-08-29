@@ -1,0 +1,240 @@
+{
+  "survey": {
+    "title": "FAME Survey (Compact)",
+    "scale": {
+      "min": 1,
+      "max": 5,
+      "labels": [
+        "Strongly Disagree",
+        "Disagree",
+        "Neutral",
+        "Agree",
+        "Strongly Agree"
+      ]
+    },
+    "dimensions": [
+      {
+        "name": "Assessment Reference",
+        "id": "ASSESSMENT_REFERENCE",
+        "questions": [
+          {
+            "id": "ASSESSMENT_REFERENCE_1",
+            "text": "3.0"
+          }
+        ]
+      },
+      {
+        "name": "Business",
+        "id": "BUSINESS",
+        "questions": [
+          {
+            "id": "BUSINESS_1",
+            "text": "Group"
+          },
+          {
+            "id": "BUSINESS_2",
+            "text": "B1"
+          },
+          {
+            "id": "BUSINESS_3",
+            "text": "B2"
+          },
+          {
+            "id": "BUSINESS_4",
+            "text": "B3"
+          },
+          {
+            "id": "BUSINESS_5",
+            "text": "B4"
+          },
+          {
+            "id": "BUSINESS_6",
+            "text": "B5"
+          }
+        ]
+      },
+      {
+        "name": "Combined FAME",
+        "id": "COMBINED_FAME",
+        "questions": [
+          {
+            "id": "COMBINED_FAME_1",
+            "text": "Dimension"
+          },
+          {
+            "id": "COMBINED_FAME_2",
+            "text": "Technical"
+          },
+          {
+            "id": "COMBINED_FAME_3",
+            "text": "Business"
+          },
+          {
+            "id": "COMBINED_FAME_4",
+            "text": "Digital"
+          },
+          {
+            "id": "COMBINED_FAME_5",
+            "text": "Leadership"
+          },
+          {
+            "id": "COMBINED_FAME_6",
+            "text": "People"
+          }
+        ]
+      },
+      {
+        "name": "Dashboard",
+        "id": "DASHBOARD",
+        "questions": [
+          {
+            "id": "DASHBOARD_1",
+            "text": "d"
+          }
+        ]
+      },
+      {
+        "name": "Digital",
+        "id": "DIGITAL",
+        "questions": [
+          {
+            "id": "DIGITAL_1",
+            "text": "Group"
+          },
+          {
+            "id": "DIGITAL_2",
+            "text": "D1"
+          },
+          {
+            "id": "DIGITAL_3",
+            "text": "D2"
+          },
+          {
+            "id": "DIGITAL_4",
+            "text": "D3"
+          },
+          {
+            "id": "DIGITAL_5",
+            "text": "D4"
+          }
+        ]
+      },
+      {
+        "name": "Leadership",
+        "id": "LEADERSHIP",
+        "questions": [
+          {
+            "id": "LEADERSHIP_1",
+            "text": "Group"
+          },
+          {
+            "id": "LEADERSHIP_2",
+            "text": "L1"
+          },
+          {
+            "id": "LEADERSHIP_3",
+            "text": "L2"
+          },
+          {
+            "id": "LEADERSHIP_4",
+            "text": "L3"
+          },
+          {
+            "id": "LEADERSHIP_5",
+            "text": "L4"
+          }
+        ]
+      },
+      {
+        "name": "People",
+        "id": "PEOPLE",
+        "questions": [
+          {
+            "id": "PEOPLE_1",
+            "text": "Group"
+          },
+          {
+            "id": "PEOPLE_2",
+            "text": "P1"
+          },
+          {
+            "id": "PEOPLE_3",
+            "text": "P2"
+          },
+          {
+            "id": "PEOPLE_4",
+            "text": "P3"
+          },
+          {
+            "id": "PEOPLE_5",
+            "text": "P4"
+          },
+          {
+            "id": "PEOPLE_6",
+            "text": "P5"
+          }
+        ]
+      },
+      {
+        "name": "Score Card",
+        "id": "SCORE_CARD",
+        "questions": [
+          {
+            "id": "SCORE_CARD_1",
+            "text": "Combined"
+          },
+          {
+            "id": "SCORE_CARD_2",
+            "text": "Technical"
+          },
+          {
+            "id": "SCORE_CARD_3",
+            "text": "Business"
+          },
+          {
+            "id": "SCORE_CARD_4",
+            "text": "Digital"
+          },
+          {
+            "id": "SCORE_CARD_5",
+            "text": "Leadership"
+          },
+          {
+            "id": "SCORE_CARD_6",
+            "text": "People"
+          }
+        ]
+      },
+      {
+        "name": "Technical",
+        "id": "TECHNICAL",
+        "questions": [
+          {
+            "id": "TECHNICAL_1",
+            "text": "Group"
+          },
+          {
+            "id": "TECHNICAL_2",
+            "text": "T1"
+          },
+          {
+            "id": "TECHNICAL_3",
+            "text": "T2"
+          },
+          {
+            "id": "TECHNICAL_4",
+            "text": "T3"
+          },
+          {
+            "id": "TECHNICAL_5",
+            "text": "T4"
+          },
+          {
+            "id": "TECHNICAL_6",
+            "text": "T5"
+          }
+        ]
+      }
+    ]
+  }
+}

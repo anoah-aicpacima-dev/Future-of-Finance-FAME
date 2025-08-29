@@ -1,0 +1,43 @@
+dimension,question
+Assessment Reference,3.0
+Business,Group
+Business,B1
+Business,B2
+Business,B3
+Business,B4
+Business,B5
+Combined FAME,Dimension
+Combined FAME,Technical
+Combined FAME,Business
+Combined FAME,Digital
+Combined FAME,Leadership
+Combined FAME,People
+Dashboard,d
+Digital,Group
+Digital,D1
+Digital,D2
+Digital,D3
+Digital,D4
+Leadership,Group
+Leadership,L1
+Leadership,L2
+Leadership,L3
+Leadership,L4
+People,Group
+People,P1
+People,P2
+People,P3
+People,P4
+People,P5
+Score Card,Combined
+Score Card,Technical
+Score Card,Business
+Score Card,Digital
+Score Card,Leadership
+Score Card,People
+Technical,Group
+Technical,T1
+Technical,T2
+Technical,T3
+Technical,T4
+Technical,T5
