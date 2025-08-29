@@ -1,8 +1,9 @@
-
 import json
 import streamlit as st
 from datetime import datetime
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="FAME Survey", layout="wide")
 
@@ -17,7 +18,6 @@ st.title(data["survey"]["title"])
 
 scale = data["survey"]["scale"]
 labels = scale.get("labels") or [str(i) for i in range(scale["min"], scale["max"]+1)]
-value_map = {i: labels[i-scale["min"]] if i-scale["min"] < len(labels) else str(i) for i in range(scale["min"], scale["max"]+1)}
 
 responses = []
 user_info = {}
@@ -39,7 +39,6 @@ for tab, dim in zip(tabs, data["survey"]["dimensions"]):
 
 if st.button("Submit"):
     df = pd.DataFrame(responses)
-    # Aggregate scores by dimension
     summary = df.groupby("dimension")["score"].mean().reset_index().rename(columns={"score":"avg_score"})
     timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
     out_csv = f"fame_responses_{timestamp}.csv"
@@ -52,3 +51,23 @@ if st.button("Submit"):
 
     st.write("### Dimension Averages")
     st.dataframe(summary)
+
+    # --- Radar Chart (spider plot) of dimension averages ---
+    st.write("### Radar Chart")
+    categories = summary["dimension"].tolist()
+    values = summary["avg_score"].tolist()
+    if categories:
+        # Close the loop for radar
+        values += values[:1]
+        angles = np.linspace(0, 2*np.pi, len(categories), endpoint=False).tolist()
+        angles += angles[:1]
+
+        fig = plt.figure()  # single plot, no specific colors
+        ax = plt.subplot(111, polar=True)
+        ax.plot(angles, values, linewidth=2)
+        ax.fill(angles, values, alpha=0.1)
+        ax.set_xticks(angles[:-1])
+        ax.set_xticklabels(categories)
+        ax.set_yticklabels([])
+        ax.set_ylim(scale["min"], scale["max"])
+        st.pyplot(fig)
